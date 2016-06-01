@@ -3,7 +3,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Share View Controller-->
@@ -17,75 +16,12 @@
                     <view key="view" opaque="NO" contentMode="scaleToFill" id="wbc-yd-nQP">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I6j-te-r6E">
-                                <rect key="frame" x="100" y="200" width="400" height="200"/>
-                                <subviews>
-                                    <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kon-8t-Tax">
-                                        <rect key="frame" x="0.0" y="-8" width="400" height="44"/>
-                                        <color key="barTintColor" red="0.19215686269999999" green="0.46666666670000001" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
-                                        <items>
-                                            <navigationItem title="Savio" id="uQM-Mz-Tn8">
-                                                <barButtonItem key="leftBarButtonItem" title="Cancel" id="thm-gM-GYg">
-                                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <connections>
-                                                        <action selector="cancelButtonPressed:" destination="j1y-V4-xli" id="ac0-3M-UU8"/>
-                                                    </connections>
-                                                </barButtonItem>
-                                                <barButtonItem key="rightBarButtonItem" title="Post" id="Mal-jP-ACo">
-                                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <connections>
-                                                        <action selector="saveButtonPressed:" destination="j1y-V4-xli" id="7ka-jD-tZ0"/>
-                                                    </connections>
-                                                </barButtonItem>
-                                            </navigationItem>
-                                        </items>
-                                    </navigationBar>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w9B-r4-L0n">
-                                        <rect key="frame" x="287" y="44" width="100" height="80"/>
-                                    </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="lSv-X6-SFF">
-                                        <rect key="frame" x="8" y="44" width="271" height="143"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                </subviews>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="400" id="55n-wl-jYR"/>
-                                    <constraint firstAttribute="height" constant="200" id="RhF-Eu-usP"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="400" id="hgv-pL-oM9"/>
-                                </constraints>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="hgv-pL-oM9"/>
-                                    </mask>
-                                </variation>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="I6j-te-r6E" secondAttribute="trailing" constant="80" id="2e0-Rh-AF2"/>
-                            <constraint firstItem="I6j-te-r6E" firstAttribute="centerX" secondItem="wbc-yd-nQP" secondAttribute="centerX" id="FAi-Kx-H4Q"/>
-                            <constraint firstItem="I6j-te-r6E" firstAttribute="leading" secondItem="wbc-yd-nQP" secondAttribute="leadingMargin" constant="80" id="hWk-hY-Bae"/>
-                            <constraint firstItem="I6j-te-r6E" firstAttribute="centerY" secondItem="wbc-yd-nQP" secondAttribute="centerY" id="jTH-mV-HHH"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="2e0-Rh-AF2"/>
-                                <exclude reference="hWk-hY-Bae"/>
-                            </mask>
-                        </variation>
                     </view>
-                    <connections>
-                        <outlet property="iconImageView" destination="w9B-r4-L0n" id="sCD-AN-w06"/>
-                        <outlet property="infoTextView" destination="lSv-X6-SFF" id="lwa-Fh-f62"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CEy-Cv-SGf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="431" y="54"/>
+            <point key="canvasLocation" x="396" y="-51"/>
         </scene>
     </scenes>
 </document>
