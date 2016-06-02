@@ -17,6 +17,7 @@
 		A84B21511CE479A90024C255 /* ExtensionObject.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A84B21471CE479A90024C255 /* ExtensionObject.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A84B21591CE47C440024C255 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A84B21581CE47C440024C255 /* MobileCoreServices.framework */; };
 		CAB1AFDE1CFF02EA004B3D82 /* ShareExtension.js in Resources */ = {isa = PBXBuildFile; fileRef = CAB1AFDD1CFF02EA004B3D82 /* ShareExtension.js */; };
+		CAB28D141D00441500C164E7 /* ColorSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAB28D131D00441500C164E7 /* ColorSelectionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		A84B21581CE47C440024C255 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		A89EB2701CE4A9BF0040EF2F /* SafariExtensionDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SafariExtensionDemo.entitlements; sourceTree = "<group>"; };
 		CAB1AFDD1CFF02EA004B3D82 /* ShareExtension.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = ShareExtension.js; sourceTree = "<group>"; };
+		CAB28D131D00441500C164E7 /* ColorSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSelectionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		A84B21481CE479A90024C255 /* ExtensionObject */ = {
 			isa = PBXGroup;
 			children = (
+				CAB28D131D00441500C164E7 /* ColorSelectionViewController.swift */,
 				CAB1AFDD1CFF02EA004B3D82 /* ShareExtension.js */,
 				A80F331C1CE48DE10092AC56 /* ExtensionObject.entitlements */,
 				A84B21491CE479A90024C255 /* ShareViewController.swift */,
@@ -185,7 +188,7 @@
 					};
 					A84B21461CE479A90024C255 = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = 235FYPWGUK;
+						DevelopmentTeam = YK7NKRLRZG;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
 								enabled = 1;
@@ -250,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A84B214A1CE479A90024C255 /* ShareViewController.swift in Sources */,
+				CAB28D141D00441500C164E7 /* ColorSelectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,14 +418,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ExtensionObject/ExtensionObject.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Atul Deore (GDH82HZKLM)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Atul Deore (GDH82HZKLM)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ExtensionObject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vatsa.extensionDemo.safariDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1ac4914c-73f5-453a-b3f7-4178d05740d0";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -430,14 +434,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = ExtensionObject/ExtensionObject.entitlements;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Atul Deore (GDH82HZKLM)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Atul Deore (GDH82HZKLM)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ExtensionObject/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vatsa.extensionDemo.safariDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1ac4914c-73f5-453a-b3f7-4178d05740d0";
+				PROVISIONING_PROFILE = "";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
